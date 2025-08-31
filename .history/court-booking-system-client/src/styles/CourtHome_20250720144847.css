@@ -1,0 +1,131 @@
+/* Page Wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('image 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content container inside hero */
+.content-container {
+  max-width: 900px;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.heading {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  color: #3498db;
+  border-color: #3498db;
+  transform: scale(1.05);
+}
+
+/* Button group spacing */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Quick Tips Section */
+.quick-tips-container {
+  max-width: 900px;
+  margin: 5rem auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-tip-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.15);
+  padding: 25px 30px;
+  flex: 1 1 260px;
+  max-width: 280px;
+  color: #2e7d32;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.quick-tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(46, 125, 50, 0.3);
+}
+
+.quick-tip-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #2e7d32;
+}
+
+.quick-tip-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.quick-tip-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0;
+    min-height: 450px;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+
+  .btn-group {
+    gap: 20px;
+  }
+
+  .quick-tips-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quick-tip-card {
+    max-width: 100%;
+  }
+}

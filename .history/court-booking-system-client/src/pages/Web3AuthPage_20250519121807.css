@@ -1,0 +1,37 @@
+/* src/pages/Login.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #0e6304;
+  text-align: center;
+}
+
+.login-boxup h5 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.login-boxup p {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: smaller;
+}
+
+.login-button {
+  width: 80%;
+  padding: 5px;
+  background-color: #068731e4;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+

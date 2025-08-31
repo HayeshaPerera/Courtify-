@@ -1,0 +1,252 @@
+/* Reset and container setup */
+.dashboard-navbar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styles */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #006400, #228B22); /* Beautiful green gradient */
+  color: white;
+  padding: 10px 20px;
+  z-index: 1100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 42px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Explicitly set navbar link colors to white */
+.nav-links a {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a:visited {
+  color: white !important;
+}
+
+.nav-links a:hover {
+  color: white !important;
+}
+
+.nav-links a:active {
+  color: white !important;
+}
+
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+/* Stylish pill for name and balance */
+.balance-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+}
+
+.user-name,
+.wallet-amount {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white !important;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1150;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 64px;
+  left: -260px;
+  width: 260px;
+  height: calc(100% - 64px);
+  background-color: rgba(0, 80, 40, 0.07);
+  backdrop-filter: blur(8px);
+  border-right: 2px solid #d0f0d0;
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+  padding: 20px;
+  color: #1b5e20;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #388e3c;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1b5e20;
+  font-size: 1.1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 12px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+  display: block;
+  transition: all 0.2s;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+  color: #1b5e20;
+}
+
+.sidebar-content {
+  flex: 1 1 auto;
+}
+
+.sidebar-logout {
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+/* Main content */
+.main-content {
+  padding-top: 64px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.shifted {
+  margin-left: 260px;
+}
+/* Add this to your existing DashboardNavbar.css */
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #29b80cff;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.cart-badge:empty {
+  display: none;
+}
+
+/* Pulse animation for cart badge */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Enhanced cart button hover effect */
+.view-cart-btn:hover .cart-badge {
+  background: #c0392b;
+  animation: none;
+  transform: scale(1.1);
+}
+
+.view-cart-btn:hover .cart-icon-container img {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}

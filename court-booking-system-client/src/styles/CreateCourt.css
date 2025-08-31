@@ -4,13 +4,10 @@
   justify-content: flex-end; /* form on right */
   align-items: center;
   padding: 2rem;
-  
-  /* Background with soft white transparent overlay */
   background: linear-gradient(
       rgba(255, 255, 255, 0.35),
       rgba(255, 255, 255, 0.35)
-    ),
-    url(D:\courtify\cbs-contract\court-booking-system-client\public\addcourt.png) center center / cover no-repeat;
+    );
   background-blend-mode: lighten;
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

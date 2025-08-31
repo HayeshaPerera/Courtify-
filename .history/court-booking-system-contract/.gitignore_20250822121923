@@ -1,0 +1,5 @@
+﻿/.vs
+/node_modules
+/dist
+/bundle
+.env

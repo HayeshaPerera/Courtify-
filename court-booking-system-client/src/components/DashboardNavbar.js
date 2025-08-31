@@ -32,7 +32,7 @@ const DashboardNavbar = () => {
   };
 
   return (
-    <div className="dashboard-container">
+    <div className="dashboard-navbar-container">
       {/* Top Navbar */}
       <nav className="top-navbar">
         <div

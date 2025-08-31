@@ -1,0 +1,126 @@
+/* Court Booking Container */
+.court-booking-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+/* Title and Caption */
+.court-booking-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.court-booking-subheading {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.court-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styles */
+.court-card-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.court-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Section */
+.court-card-image-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+}
+
+.court-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card Content */
+.court-card-info {
+  padding: 20px;
+}
+
+.court-card-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.court-card-meta {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Button Group */
+.court-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.court-button-view,
+.court-button-book {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.court-button-view {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.court-button-view:hover {
+  background-color: #2563eb;
+}
+
+.court-button-book {
+  background-color: #10b981;
+  color: white;
+}
+
+.court-button-book:hover {
+  background-color: #059669;
+}
+
+/* Error & Loader */
+.text-danger {
+  text-align: center;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .court-card-buttons {
+    flex-direction: column;
+  }
+}

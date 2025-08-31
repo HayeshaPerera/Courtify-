@@ -1,0 +1,65 @@
+.cancel-booking-container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f8f9fa; /* light grey */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cancel-form-item{
+    margin-bottom: 20px;
+}
+.cancel-booking-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cancel-booking-container input,
+.cancel-booking-container select,
+.cancel-booking-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.cancel-booking-container .btn {
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cancel-booking-container .btn-primary {
+  background-color: #198754;
+  border: none;
+  color: white;
+}
+
+.cancel-booking-container .btn-primary:hover {
+  background-color: #157347;
+}
+
+.cancel-booking-container .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: white;
+}
+
+.cancel-booking-container .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.cancel-booking-container .alert {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}

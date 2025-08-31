@@ -1,0 +1,70 @@
+/* ConfirmBooking.css */
+
+.container1 {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #f4fdf6;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(13, 112, 38, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #12822e;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #c9eac6;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: border 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #4ab420;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 180, 32, 0.2);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+  background-color: #12822e;
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #0f6c27;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  border: none;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #b3b3b3;
+  color: #000;
+}
